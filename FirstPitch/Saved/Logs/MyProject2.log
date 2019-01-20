@@ -565,3 +565,42 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.01.16-17.20.34:024][  3]LogAssetRegistry: Asset discovery search completed in 20.3924 seconds
 [2019.01.16-17.20.34:031][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
 [2019.01.16-17.20.34:031][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000192 seconds (updated 0 objects)
+[2019.01.16-17.23.28:388][550]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.16-17.23.41:165][868]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.01.16-17.23.51:928][164]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.16-17.23.56:621][175]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.01.16-17.23.57:796][211]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.16-17.24.15:289][609]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.01.16-17.24.19:622][739]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.01.16-17.24.24:652][886]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.16-17.24.34:050][ 77]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.01.16-17.24.39:445][208]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.16-17.24.53:508][571]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.01.16-17.24.55:580][603]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2019.01.16-17.24.55:587][603]LogD3D11RHI: Error: Result failed 
+ at D:\Build\++UE4\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11Query.cpp:140 
+ with error DXGI_ERROR_DEVICE_REMOVED DXGI_ERROR_DEVICE_HUNG
+[2019.01.16-17.24.55:587][603]LogD3D11RHI: [Aftermath] GDynamicRHI=00000155D40820C0, GDX11NVAfterMathEnabled=0, Result=0xFFFFFFFF, bDeviceActive=0
+[2019.01.16-17.24.55:587][603]LogWindows: Windows GetLastError: The operation completed successfully. (0)
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SyncInterval 0
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SwapChainDesc.BufferDesc.Width 1938
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SwapChainDesc.BufferDesc.Height 1048
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2019.01.16-17.24.59:076][604]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.BufferCount 1
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.OutputWindow 0000000000090A08
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.Windowed true
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.SwapEffect 0
+[2019.01.16-17.24.59:077][604]LogRHI: Error: SwapChainDesc.Flags 2
+[2019.01.16-17.24.59:077][604]LogD3D11RHI: Error: Result failed 
+ at D:\Build\++UE4\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11Viewport.cpp:361 
+ with error DXGI_ERROR_DEVICE_REMOVED DXGI_ERROR_DEVICE_HUNG
+[2019.01.16-17.24.59:077][604]LogD3D11RHI: [Aftermath] GDynamicRHI=00000155D40820C0, GDX11NVAfterMathEnabled=0, Result=0xFFFFFFFF, bDeviceActive=0
+[2019.01.16-17.24.59:077][604]LogWindows: FPlatformMisc::RequestExit(1)
+[2019.01.16-17.24.59:081][604]Log file closed, 01/16/19 12:24:59
