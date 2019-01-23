@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://roll with it/dice-152179_640.png" type="Texture" id=1]
+
+[node name="dice" type="Sprite"]
+position = Vector2( 154.5, -147 )
+scale = Vector2( 0.0953125, 0.0839695 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+

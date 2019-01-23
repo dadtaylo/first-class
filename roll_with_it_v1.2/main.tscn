@@ -1,0 +1,426 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://roll with it/bamboogle_graphics/wood_background.png" type="Texture" id=1]
+[ext_resource path="res://background.gd" type="Script" id=2]
+[ext_resource path="res://icons/delapouite/originals/svg/dice-six-faces-one.svg" type="Texture" id=3]
+[ext_resource path="res://diceFall.gd" type="Script" id=4]
+[ext_resource path="res://icons/delapouite/originals/svg/dice-six-faces-two.svg" type="Texture" id=5]
+[ext_resource path="res://icons/delapouite/originals/svg/dice-six-faces-three.svg" type="Texture" id=6]
+[ext_resource path="res://icons/delapouite/originals/svg/dice-six-faces-four.svg" type="Texture" id=7]
+[ext_resource path="res://icons/delapouite/originals/svg/dice-six-faces-five.svg" type="Texture" id=8]
+[ext_resource path="res://icons/delapouite/originals/svg/dice-six-faces-six.svg" type="Texture" id=9]
+[ext_resource path="res://ballcatcher.gd" type="Script" id=10]
+[ext_resource path="res://roll with it/bamboogle_graphics/ball_catcher.png" type="Texture" id=11]
+[ext_resource path="res://labels.gd" type="Script" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 50.9795, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 256.811, 255.832 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 256.811, 255.832 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 256.811, 255.832 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 256.811, 255.832 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 256.811, 255.832 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 256.811, 255.832 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 33.6744, 5.77264 )
+
+[sub_resource type="CapsuleShape2D" id=9]
+
+custom_solver_bias = 0.0
+radius = 7.33682
+height = 4.81673
+
+[sub_resource type="CapsuleShape2D" id=10]
+
+custom_solver_bias = 0.0
+radius = 7.33682
+height = 63.924
+
+[node name="main" type="Node2D"]
+position = Vector2( 27.6764, -16.0378 )
+rotation = -0.00782234
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 483.323, 334.267 )
+scale = Vector2( 1, 1.21647 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="dice" type="Node2D" parent="."]
+z_index = 1
+_sections_unfolded = [ "Script", "Transform", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="die1" type="Sprite" parent="dice"]
+position = Vector2( 795.059, -450 )
+rotation = 2.94263
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="dice/die1"]
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die1/Area2D"]
+shape = SubResource( 1 )
+
+[node name="die2" type="Sprite" parent="dice"]
+position = Vector2( 60.0231, -250 )
+scale = Vector2( 0.075, 0.075 )
+texture = ExtResource( 5 )
+script = ExtResource( 4 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="dice/die2"]
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die2/Area2D"]
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="die3" type="Sprite" parent="dice"]
+position = Vector2( 121.366, -850 )
+rotation = 0.174533
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 6 )
+script = ExtResource( 4 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="dice/die3"]
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die3/Area2D"]
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform", "shape" ]
+
+[node name="die4" type="Sprite" parent="dice"]
+position = Vector2( 427.11, -650 )
+rotation = -3.07178
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 7 )
+script = ExtResource( 4 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="dice/die4"]
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die4/Area2D"]
+shape = SubResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="die5" type="Sprite" parent="dice"]
+position = Vector2( 384.718, -50 )
+rotation = 0.386695
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+script = ExtResource( 4 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="dice/die5"]
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die5/Area2D"]
+shape = SubResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="die6" type="Sprite" parent="dice"]
+position = Vector2( 781.46, -1050 )
+rotation = 1.19555
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 9 )
+script = ExtResource( 4 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="dice/die6"]
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die6/Area2D"]
+rotation = 8.9407e-008
+shape = SubResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dice/die6"]
+position = Vector2( 11264.7, 4144.97 )
+rotation = 1.74708
+scale = Vector2( 2, 2 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Transform", "shape" ]
+
+[node name="ballcatcher" type="Node2D" parent="."]
+position = Vector2( 0, 500 )
+script = ExtResource( 10 )
+_sections_unfolded = [ "Script", "Transform" ]
+
+[node name="catcher" type="Sprite" parent="ballcatcher"]
+position = Vector2( 22.1271, 21.8753 )
+scale = Vector2( 1.35689, 1.66289 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Animation", "Offset", "Script", "Transform" ]
+
+[node name="catch" type="Area2D" parent="ballcatcher/catcher" groups=[
+"catch",
+]]
+position = Vector2( -0.0625782, 7.99976 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="catch" type="CollisionShape2D" parent="ballcatcher/catcher/catch"]
+position = Vector2( 0.042675, -4.45145 )
+shape = SubResource( 8 )
+_sections_unfolded = [ "shape" ]
+
+[node name="notCatch" type="Area2D" parent="ballcatcher/catcher" groups=[
+"notCatch",
+]]
+position = Vector2( -0.0625782, 7.99976 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="notCatch" type="CollisionShape2D" parent="ballcatcher/catcher/notCatch"]
+position = Vector2( 42.4131, 0.0671387 )
+rotation = 1.5708
+shape = SubResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="notCatch2" type="CollisionShape2D" parent="ballcatcher/catcher/notCatch"]
+position = Vector2( -41.5843, -0.589905 )
+rotation = 1.5708
+shape = SubResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="notCatch3" type="CollisionShape2D" parent="ballcatcher/catcher/notCatch"]
+position = Vector2( -0.33313, 9.7843 )
+rotation = 1.5708
+shape = SubResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="labels" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Label1" type="Label" parent="labels"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -24.0
+margin_top = 155.0
+margin_right = 231.0
+margin_bottom = 169.0
+rect_scale = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Whistle"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label2" type="Label" parent="labels"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -24.0
+margin_top = 155.0
+margin_right = 231.0
+margin_bottom = 169.0
+rect_scale = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Do a Dance"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label3" type="Label" parent="labels"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -24.0
+margin_top = 155.0
+margin_right = 231.0
+margin_bottom = 169.0
+rect_scale = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Stand on one leg"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label4" type="Label" parent="labels"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -24.0
+margin_top = 155.0
+margin_right = 231.0
+margin_bottom = 169.0
+rect_scale = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Walk like a monkey"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label5" type="Label" parent="labels"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -24.0
+margin_top = 155.0
+margin_right = 231.0
+margin_bottom = 169.0
+rect_scale = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Laugh out loud"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label6" type="Label" parent="labels"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -24.0
+margin_top = 155.0
+margin_right = 231.0
+margin_bottom = 169.0
+rect_scale = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Squak like a chicken"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
